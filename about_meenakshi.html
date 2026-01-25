@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Meenakshi | Stitch &amp; Splatter Studio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;family=Short+Stack&amp;family=Itim&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF97B7", // Blush Pink
+                        "mint": "#BEE9E2",    // Mint Green
+                        "lemon": "#FFF4BD",   // Lemon Yellow
+                        "background-light": "#FFFDF7",
+                        "text-main": "#4A3E3E",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "handwritten": ["Short Stack", "cursive"],
+                        "playful": ["Itim", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "full": "9999px",
+                        "bubbly": "3rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .stitched-line {
+                background-image: linear-gradient(to right, #FF97B7 50%, rgba(255, 255, 255, 0) 0%);
+                background-position: bottom;
+                background-size: 10px 2px;
+                background-repeat: repeat-x;
+            }
+            .bubbly-shadow {
+                box-shadow: 0 10px 25px -5px rgba(255, 151, 183, 0.2);
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrapbook-bg {
+            background-color: #FFFDF7;
+            background-image: radial-gradient(#FF97B7 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .hand-drawn-border {
+            border: 3px solid #FF97B7;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        }
+        .sketch-border {
+            border: 3px solid #4A3E3E;
+            border-radius: 12px 42px 15px 52px/42px 15px 52px 12px;
+        }
+        .floating-doodle {
+            filter: drop-shadow(2px 2px 0px rgba(255, 151, 183, 0.2));
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display text-text-main transition-colors duration-300 scrapbook-bg">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+        <header
+            class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-dashed border-primary/30 px-4 md:px-20 lg:px-40 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <a class="flex items-center gap-3 hover:opacity-80 transition-opacity" href="index.html">
+                        <div
+                            class="size-12 bg-primary rounded-full flex items-center justify-center text-white rotate-3 shadow-lg">
+                            <span class="material-symbols-outlined">auto_fix</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tight font-serif italic text-primary">Stitch &amp;
+                            Splatter</h2>
+                    </a>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex items-center gap-8 font-handwritten text-lg">
+                    <!-- Classes dropdown -->
+                    <div class="relative">
+                        <button id="classesBtn"
+                            class="flex items-center gap-1 hover:text-primary transition-colors decoration-primary/30 hover:underline">
+                            Classes
+                            <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+                        </button>
+
+                        <div id="classesMenu"
+                            class="absolute left-0 top-full w-56 mt-2 rounded-xl bg-white shadow-lg p-2 hidden z-50">
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="sewing.html">
+                                5 week Sewing Class
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="mandala.html">
+                                Mandala Workshop
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="wreath.html">
+                                Seasonal Wreath Making
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- About Meenakshi link -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="about_meenakshi.html">
+                        About Meena
+                    </a>
+
+                    <!-- Contact → landing page section -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="index.html#charity">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-1">
+            <section class="relative px-4 md:px-20 lg:px-40 py-16 md:py-24 overflow-hidden">
+                <span
+                    class="material-symbols-outlined absolute top-10 left-10 text-primary opacity-20 text-6xl rotate-12 floating-doodle">brush</span>
+                <span
+                    class="material-symbols-outlined absolute bottom-20 right-10 text-mint opacity-30 text-8xl -rotate-12 floating-doodle">architecture</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+                    <div class="relative order-2 lg:order-1">
+                        <div
+                            class="aspect-square bg-cover bg-center rounded-bubbly shadow-2xl overflow-hidden hand-drawn-border p-4 bg-white rotate-1">
+                            <img alt="Meenakshi in her studio" class="size-full object-cover rounded-bubbly"
+                                src="pics/aunty.JPG" />
+                        </div>
+                        <div
+                            class="absolute -top-6 -left-6 bg-lemon p-4 rounded-full shadow-lg -rotate-12 border-2 border-white">
+                            <span class="material-symbols-outlined text-4xl text-primary">palette</span>
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -right-4 bg-mint p-6 rounded-bubbly shadow-xl flex items-center gap-4 rotate-3 border-2 border-white">
+                            <p class="font-black text-xl font-playful">Meet Meena</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-8 order-1 lg:order-2">
+                        <span
+                            class="inline-block px-6 py-2 bg-lemon text-text-main rounded-full text-sm font-handwritten font-bold shadow-sm w-fit -rotate-2">The
+                            Heart of the Studio ✨</span>
+                        <h1 class="text-text-main text-5xl md:text-7xl font-serif italic leading-[1.05]">
+                            Creating <br />
+                            <span class="text-primary not-italic font-black relative">
+                                Happy Moments
+                                <svg class="absolute -bottom-2 left-0 w-full" height="10" preserveAspectRatio="none"
+                                    viewBox="0 0 100 10">
+                                    <path d="M0 5 Q 25 0, 50 5 T 100 5" fill="transparent" stroke="#FF97B7"
+                                        stroke-width="3"></path>
+                                </svg>
+                            </span>
+                            Every Day
+                        </h1>
+                        <p class="text-xl text-gray-600 font-handwritten leading-relaxed max-w-lg">
+                            Welcome to my world of threads, colors, and cozy fabrics. I'm Meena Charlotte Chand, and I
+                            believe that everyone has a masterpiece waiting to be born.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white py-24 px-4 md:px-20 lg:px-40 relative">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="material-symbols-outlined text-4xl text-primary rotate-12">history_edu</span>
+                        <h2 class="text-4xl md:text-5xl font-serif italic">My Story</h2>
+                    </div>
+                    <div class="space-y-8 font-handwritten text-xl text-gray-700 leading-loose">
+                        <p class="relative">
+                            I was taught needle point and other fine arts by my mother very early in life. I love doing
+                            things with my hand and it
+                            gives me great delight to see the end results, but the real joy is in the process.
+                            <span
+                                class="material-symbols-outlined absolute -right-12 top-0 text-mint opacity-40 text-4xl hidden md:block">content_cut</span>
+                        </p>
+                        <p>
+                            Today, I embrace a philosophy of <span class="bg-lemon px-2 font-bold italic">"happy
+                                accidents."</span> In my studio, there are no mistakes, only unexpected design
+                            opportunities. Whether we're exploring acrylics or sewing a new pair of pants, the goal is
+                            always joy and authentic expression.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 px-4 md:px-20 lg:px-40 bg-mint/10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif italic mb-4">My Crafting World</h2>
+                    <p class="text-xl font-handwritten text-gray-600">A peek into the skills I love to share!</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-bubbly border-4 border-primary/20 shadow-lg -rotate-1 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-4xl">format_paint</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4 font-playful">Fine Arts</h4>
+                        <p class="font-handwritten text-gray-500 mb-6">I find peace in the fluidity of
+                            <b>watercolors</b>, the softness of <b>pastels</b>, and the bold textures of
+                            <b>acrylics</b>.
+                        </p>
+                        <div class="mt-auto flex gap-2">
+                            <span class="px-3 py-1 bg-lemon rounded-full text-xs font-bold">Canvas</span>
+                            <span class="px-3 py-1 bg-mint rounded-full text-xs font-bold">Paper</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-bubbly border-4 border-mint/40 shadow-lg rotate-1 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-mint/20 rounded-full flex items-center justify-center text-text-main mb-6">
+                            <span class="material-symbols-outlined text-4xl">styler</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4 font-playful">Fiber Arts</h4>
+                        <p class="font-handwritten text-gray-500 mb-6">From cozy <b>knitted</b> scarves to intricate
+                            <b>crocheted</b> toys, working with yarn is my daily meditation.
+                        </p>
+                        <div class="mt-auto flex gap-2">
+                            <span class="px-3 py-1 bg-primary/20 rounded-full text-xs font-bold">Yarn Love</span>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-bubbly border-4 border-lemon shadow-lg -rotate-2 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-lemon/40 rounded-full flex items-center justify-center text-text-main mb-6">
+                            <span class="material-symbols-outlined text-4xl">checkroom</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4 font-playful">Handmade Living</h4>
+                        <p class="font-handwritten text-gray-500 mb-6">I love re-purposing and sewing functional
+                            beauty—think colorful <b>table runners</b> and my signature comfy <b>harem pants</b>.
+                        </p>
+                        <div class="mt-auto flex gap-2">
+                            <span class="px-3 py-1 bg-mint rounded-full text-xs font-bold">Functional Art</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 px-4 md:px-20 lg:px-40 bg-primary/5 relative" id="charity">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span
+                            class="inline-block px-4 py-1 bg-white border-2 border-primary text-primary rounded-full text-sm font-black mb-6 rotate-2">Heart-led
+                            Crafting</span>
+                        <h2 class="text-4xl md:text-5xl font-serif italic mb-8">The Hat Makers Club</h2>
+                        <p class="text-xl font-handwritten text-gray-700 leading-relaxed mb-8">
+                            Art is even more beautiful when it’s shared. A piece of my heart lives in <span
+                                class="font-bold text-primary italic">Honduras</span>, where I send hand-crocheted
+                            beanies for children in need.
+                        </p>
+                        <p class="text-xl font-handwritten text-gray-700 leading-relaxed mb-10">
+                            What started as a small personal project has grown into a community mission. We use the
+                            softest yarns to ensure every child feels a warm hug from our studio across the miles.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="aspect-video bg-cover bg-center rounded-bubbly shadow-xl overflow-hidden hand-drawn-border p-2 bg-white -rotate-2">
+                            <img alt="Crocheted beanies for charity" class="size-full object-cover rounded-bubbly"
+                                src="pics/knit.JPG" />
+                        </div>
+                        <span
+                            class="material-symbols-outlined absolute -bottom-10 -right-10 text-primary opacity-20 text-9xl">favorite</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer & Charity -->
+        <footer class="bg-text-main text-white pt-24 pb-12 px-4 md:px-20 lg:px-40 relative overflow-hidden"
+            id="charity">
+            <div
+                class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
+                <p>© 2026 Stitch & Spalsh Studio. Made with ❤️ and lots of threads.</p>
+                <div class="flex gap-10">
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
+                        Magic</a>
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
+                        Rules</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const classesBtn = document.getElementById("classesBtn");
+        const classesMenu = document.getElementById("classesMenu");
+        const classesArrow = document.getElementById("classesArrow");
+
+        classesBtn.addEventListener("click", () => {
+            classesMenu.classList.toggle("hidden");
+            classesArrow.classList.toggle("rotate-180");
+        });
+    </script>
+</body>
+
+</html>

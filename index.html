@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stitch & Splash Studio | Craft Classes Landing Page</title>
+
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Short+Stack&family=Itim&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF97B7", // Blush Pink
+                        "mint": "#BEE9E2",    // Mint Green
+                        "lemon": "#FFF4BD",   // Lemon Yellow
+                        "background-light": "#FFFDF7",
+                        "text-main": "#4A3E3E",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "handwritten": ["Short Stack", "cursive"],
+                        "playful": ["Itim", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "full": "9999px",
+                        "bubbly": "3rem"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light font-display text-text-main transition-colors duration-300 scrapbook-bg">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+        <!-- Header Section -->
+        <header
+            class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-dashed border-primary/30 px-4 md:px-20 lg:px-40 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div
+                            class="size-12 bg-primary rounded-full flex items-center justify-center text-white rotate-3 shadow-lg">
+                            <span class="material-symbols-outlined">auto_fix</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tight font-serif italic text-primary">Stitch & Splash
+                        </h2>
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex items-center gap-8 font-handwritten text-lg">
+                    <!-- Classes dropdown -->
+                    <div class="relative">
+                        <button id="classesBtn"
+                            class="flex items-center gap-1 hover:text-primary transition-colors decoration-primary/30 hover:underline">
+                            Classes
+                            <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+                        </button>
+
+                        <div id="classesMenu"
+                            class="absolute left-0 top-full w-56 mt-2 rounded-xl bg-white shadow-lg p-2 hidden z-50">
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="sewing.html">
+                                5 week Sewing Class
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="mandala.html">
+                                Mandala Workshop
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="wreath.html">
+                                Seasonal Wreath Making
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- About Meenakshi link -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="about_meenakshi.html">
+                        About Meena
+                    </a>
+
+                    <!-- Contact → landing page section -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="index.html#charity">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex-1">
+
+            <!-- Hero Section -->
+            <section class="relative px-4 md:px-20 lg:px-40 py-16 md:py-24 overflow-hidden">
+                <!-- Decorative Background Icons -->
+                <span
+                    class="material-symbols-outlined absolute top-10 left-10 text-primary opacity-20 text-6xl rotate-12">spa</span>
+                <span
+                    class="material-symbols-outlined absolute bottom-20 right-10 text-mint opacity-30 text-8xl -rotate-12">local_florist</span>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+                    <!-- Hero Text Content -->
+                    <div class="flex flex-col gap-8">
+                        <span
+                            class="inline-block px-6 py-2 bg-lemon text-text-main rounded-full text-sm font-handwritten font-bold shadow-sm w-fit -rotate-2">✨
+                            Creativity Awaits!</span>
+                        <h1 class="text-text-main text-5xl md:text-7xl font-serif italic leading-[1.05]">
+                            Unleash Your <br />
+                            <span class="text-primary not-italic font-black relative">
+                                Crafty Magic
+                                <!-- Underline SVG -->
+                                <svg class="absolute -bottom-2 left-0 w-full" height="10" preserveAspectRatio="none"
+                                    viewBox="0 0 100 10">
+                                    <path d="M0 5 Q 25 0, 50 5 T 100 5" fill="transparent" stroke="#FF97B7"
+                                        stroke-width="3"></path>
+                                </svg>
+                            </span>
+                            for All Ages
+                        </h1>
+                        <p class="text-xl text-gray-600 font-handwritten leading-relaxed max-w-lg">
+                            From bubbly weekly kids classes to whimsical mandala dreams. Join Meena's studio where
+                            <span class="bg-lemon px-1">mistakes are just happy accidents!</span>
+                        </p>
+                        <div class="flex flex-wrap gap-6 pt-4">
+                            <a href="#workshops"
+                                class="bg-primary text-white px-10 py-5 rounded-bubbly font-black text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/20 -rotate-1 inline-flex items-center justify-center">Explore
+                                Workshops</a>
+                            <a href="sewing.html"
+                                class="bg-white border-4 border-mint px-10 py-5 rounded-bubbly font-black text-lg hover:bg-mint/10 transition-colors rotate-1 inline-flex items-center justify-center">Sewing
+                                Path</a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image & Badge -->
+                    <div class="relative">
+                        <div
+                            class="aspect-square bg-cover bg-center rounded-bubbly shadow-2xl overflow-hidden hand-drawn-border p-4 bg-white">
+                            <img alt="Craft Materials" class="size-full object-cover rounded-bubbly"
+                                src="pics/aunty.JPG" />
+                            <div
+                                class="absolute -bottom-8 -right-8 bg-lemon p-8 rounded-bubbly shadow-xl flex items-center gap-4 rotate-3 border-2 border-white">
+                                <div
+                                    class="size-14 rounded-full bg-white flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-3xl">celebration</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-black uppercase text-text-main/60 font-handwritten">Join the
+                                        Fun</p>
+                                    <p class="font-black text-xl font-playful">New Sessions Weekly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Workshops Section -->
+            <section class="bg-mint/20 py-24 px-4 md:px-20 lg:px-40 relative" id="workshops">
+                <div class="text-center mb-16 relative">
+                    <span
+                        class="material-symbols-outlined absolute -top-10 left-1/4 text-primary opacity-30 text-4xl">brush</span>
+                    <h2 class="text-5xl font-serif italic mb-4">Our Workshops</h2>
+                    <p class="text-xl font-handwritten text-gray-600">Handmade with heart. Discover our featured
+                        classes.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Cards -->
+                    <a href="mandala.html" class="block group">
+                        <div
+                            class="bg-white rounded-bubbly p-8 shadow-xl border-4 border-primary/20 relative rotate-1 flex flex-col md:flex-row gap-8 transition-transform group-hover:scale-105">
+                            <div
+                                class="w-full md:w-1/2 aspect-square rounded-2xl overflow-hidden border-2 border-dashed border-primary p-2">
+                                <img alt="Mandala Art" class="w-full h-full object-cover rounded-xl"
+                                    src="pics/mandala.JPG" />
+                            </div>
+                            <div class="flex flex-col justify-center flex-1">
+                                <span
+                                    class="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-xs font-black mb-2 w-fit">PRIVATE
+                                    CLASS</span>
+                                <h3 class="text-3xl font-serif italic mb-4 group-hover:text-primary transition-colors">
+                                    Mandala Workshop</h3>
+                                <p class="font-handwritten text-gray-600 mb-6 leading-relaxed">
+                                    A relaxing private art class focusing on circular wood or canvas. Click to view
+                                    details.
+                                </p>
+                                <div class="flex items-center gap-3 text-sm font-black text-primary">
+                                    <span class="material-symbols-outlined">palette</span>
+                                    <span>View Class Page &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="wreath.html" class="block group">
+                        <div
+                            class="bg-white rounded-bubbly p-8 shadow-xl border-4 border-mint relative -rotate-1 flex flex-col md:flex-row gap-8 transition-transform group-hover:scale-105">
+                            <div
+                                class="w-full md:w-1/2 aspect-square rounded-2xl overflow-hidden border-2 border-dashed border-mint p-2">
+                                <img alt="Wreath Making" class="w-full h-full object-cover rounded-xl"
+                                    src="pics/wreath1.JPG" />
+                            </div>
+                            <div class="flex flex-col justify-center flex-1">
+                                <span
+                                    class="inline-block px-4 py-1 bg-mint/40 text-text-main rounded-full text-xs font-black mb-2 w-fit">3-WEEK
+                                    COURSE</span>
+                                <h3 class="text-3xl font-serif italic mb-4 group-hover:text-mint-600 transition-colors">
+                                    Seasonal Wreath Making</h3>
+                                <p class="font-handwritten text-gray-600 mb-6 leading-relaxed">
+                                    Perfect for middle schoolers and up! Click to view details about this cozy session.
+                                </p>
+                                <div class="flex items-center gap-3 text-sm font-black text-mint-600">
+                                    <span class="material-symbols-outlined">local_florist</span>
+                                    <span>View Class Page &rarr;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Membership Groups -->
+            <section class="bg-primary/10 py-24 px-4 md:px-20 lg:px-40 relative" id="classes">
+                <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-8 relative z-10">
+                    <div class="max-w-xl">
+                        <h2 class="text-5xl font-serif italic mb-4">Our Primary Classes</h2>
+                        <p class="text-xl font-handwritten text-gray-600">Our crafty club is a communal space for every
+                            heart, big or small!</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <span
+                            class="material-symbols-outlined text-primary text-6xl opacity-30 animate-pulse">brush</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div
+                        class="bg-white p-10 rounded-bubbly border-4 border-mint/30 hover:scale-105 transition-transform shadow-lg -rotate-1 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-mint rounded-full flex items-center justify-center text-text-main mb-6 shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">child_care</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-3 font-playful">Weekly Kids Classes</h4>
+                        <p class="text-lg font-handwritten text-gray-500 leading-snug">A playful space where young
+                            makers learn, laugh, and craft together!</p>
+                    </div>
+                    <div
+                        class="bg-white p-10 rounded-bubbly border-4 border-primary/30 hover:scale-105 transition-transform shadow-lg rotate-1 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-6 shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">home_work</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-3 font-playful">Homeschool Classes</h4>
+                        <p class="text-lg font-handwritten text-gray-500 leading-snug">Daytime creative sessions built
+                            for the homeschool community to connect and create.</p>
+                    </div>
+                    <div
+                        class="bg-white p-10 rounded-bubbly border-4 border-lemon/50 hover:scale-105 transition-transform shadow-lg -rotate-2 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-lemon rounded-full flex items-center justify-center text-text-main mb-6 shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">nightlife</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-3 font-playful">Ladies Nights</h4>
+                        <p class="text-lg font-handwritten text-gray-500 leading-snug">Gather your girl gang for an
+                            evening of creativity and wonderful shared stories.</p>
+                    </div>
+                    <div
+                        class="bg-white p-10 rounded-bubbly border-4 border-mint/30 hover:scale-105 transition-transform shadow-lg rotate-2 flex flex-col items-center text-center">
+                        <div
+                            class="size-20 bg-mint/40 rounded-full flex items-center justify-center text-text-main mb-6 shadow-sm">
+                            <span class="material-symbols-outlined text-4xl">family_restroom</span>
+                        </div>
+                        <h4 class="text-2xl font-black mb-3 font-playful">Mommy &amp; Me (And Friends)</h4>
+                        <p class="text-lg font-handwritten text-gray-500 leading-snug">Bonding time for Mommy, Daddy, or
+                            even Grandma &amp; Grandpa with their favorite little artist!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-24 px-4 md:px-20 lg:px-40 bg-white" id="pricing">
+                <div class="text-center mb-16 relative">
+                    <h2 class="text-5xl font-serif italic mb-4">Pricing &amp; Bundles</h2>
+                    <p class="text-xl font-handwritten text-gray-600 max-w-2xl mx-auto">Choose the path that fits your
+                        creative rhythm!</p>
+                    <span
+                        class="material-symbols-outlined absolute -top-10 right-1/4 text-lemon opacity-50 text-6xl">local_activity</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div
+                        class="bg-lemon/20 p-10 rounded-bubbly border-4 border-dashed border-lemon hover:-rotate-1 transition-transform relative group">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full border-2 border-lemon text-xs font-black font-handwritten">
+                            THE STARTER</div>
+                        <h4 class="text-2xl font-black font-playful text-center mb-2">Single 'TRY ME'</h4>
+                        <p class="text-sm font-handwritten text-gray-500 text-center mb-6">(One-time only)</p>
+                        <div class="text-4xl font-black text-center mb-8 font-playful">$35<span
+                                class="text-base font-normal">/class</span></div>
+                        <ul class="space-y-3 font-handwritten text-gray-600 mb-10">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> All
+                                materials included</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Perfect
+                                first experience</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Meet the
+                                teacher</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-primary/5 p-10 rounded-bubbly border-4 border-primary hover:scale-105 transition-transform relative z-10 shadow-xl shadow-primary/10">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-1 rounded-full text-xs font-black font-handwritten">
+                            MOST POPULAR</div>
+                        <h4 class="text-2xl font-black font-playful text-center mb-2">2-Class Bundle</h4>
+                        <p class="text-sm font-handwritten text-gray-500 text-center mb-6">Double the fun!</p>
+                        <div class="text-4xl font-black text-center mb-8 font-playful">$65<span
+                                class="text-base font-normal">/bundle</span></div>
+                        <ul class="space-y-3 font-handwritten text-gray-600 mb-10">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Save $5
+                                on classes</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Use
+                                within 30 days</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Bring a
+                                friend!</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-mint/20 p-10 rounded-bubbly border-4 border-dashed border-mint hover:rotate-1 transition-transform relative">
+                        <div
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full border-2 border-mint text-xs font-black font-handwritten text-emerald-600">
+                            BEST VALUE</div>
+                        <h4 class="text-2xl font-black font-playful text-center mb-2">4-Class Bundle</h4>
+                        <p class="text-sm font-handwritten text-gray-500 text-center mb-6">Save more!</p>
+                        <div class="text-4xl font-black text-center mb-8 font-playful">$120<span
+                                class="text-base font-normal">/bundle</span></div>
+                        <ul class="space-y-3 font-handwritten text-gray-600 mb-10">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">stars</span> Save $20 total!
+                            </li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Perfect
+                                for projects</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Progress
+                                through the path</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 px-4 md:px-20 lg:px-40 bg-lemon/10 overflow-hidden" id="events">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1 relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white p-2 rounded-xl shadow-lg -rotate-3 border-2 border-primary/20">
+                                <img alt="Party context" class="rounded-lg object-contain w-full h-100"
+                                    src="pics/flower_arrangement1.JPG" />
+
+                            </div>
+                            <div class="bg-white p-2 rounded-xl shadow-lg rotate-3 mt-8 border-2 border-mint/20">
+                                <img alt="Group context" class="rounded-lg object-cover w-full h-30"
+                                    src="pics/wreath2.JPG" />
+                            </div>
+                        </div>
+                        <span
+                            class="material-symbols-outlined absolute -bottom-10 -right-5 text-primary text-6xl rotate-12 opacity-40">celebration</span>
+                    </div>
+                    <div class="order-1 lg:order-2 flex flex-col gap-8">
+                        <h2 class="text-5xl font-serif italic mb-2">Special Events</h2>
+                        <p class="text-xl font-handwritten text-gray-600 leading-relaxed">
+                            Looking for something extra special? We host private gatherings that craft memories
+                            together!
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4 group">
+                                <div
+                                    class="size-14 shrink-0 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined">cake</span>
+                                </div>
+                                <div>
+                                    <h5 class="text-xl font-black font-playful mb-1">Birthday Parties</h5>
+                                    <p class="font-handwritten text-gray-500">Celebrate your big day with fabric and
+                                        friends! Custom crafts for every guest.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 group">
+                                <div
+                                    class="size-14 shrink-0 bg-mint/40 rounded-full flex items-center justify-center text-text-main">
+                                    <span class="material-symbols-outlined">diversity_3</span>
+                                </div>
+                                <div>
+                                    <h5 class="text-xl font-black font-playful mb-1">Women’s Groups</h5>
+                                    <p class="font-handwritten text-gray-500">Perfect for book clubs, church groups, or
+                                        just a neighborhood creative retreat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-6 bg-white rounded-bubbly border-4 border-white shadow-md rotate-1">
+                            <p class="font-handwritten italic text-center">
+                                * Special events are available upon request based on calendar availability. <br />
+                                <a class="text-primary font-black underline decoration-primary/30 hover:text-primary/70"
+                                    href="#">Inquire about your date!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Testimonial / Founder Quote -->
+            <section class="py-32 px-4 md:px-20 lg:px-40 bg-mint/10 overflow-hidden relative">
+                <span
+                    class="material-symbols-outlined absolute -left-10 top-1/2 text-primary opacity-10 text-[200px]">format_quote</span>
+                <div class="max-w-4xl mx-auto text-center relative z-10">
+                    <div class="mb-12 flex justify-center">
+                        <div class="size-32 rounded-full border-8 border-white p-1 shadow-2xl rotate-6">
+                            <img alt="Meena" class="size-full object-cover rounded-full" src="" />
+                        </div>
+                    </div>
+                    <blockquote class="text-4xl md:text-5xl font-serif italic text-text-main leading-tight mb-10">
+                        "In our studio, we believe in expression, not perfection. Remember:
+                        <span
+                            class="bg-lemon px-4 py-2 inline-block rounded-xl -rotate-1 mt-4 text-primary not-italic font-black">mistakes
+                            are just happy accidents!</span>"
+                    </blockquote>
+                    <cite class="not-italic font-black text-2xl font-playful text-primary block mb-2">Meena
+                        Chand</cite>
+                    <p class="text-xl font-handwritten text-gray-500">Founder & Master Crafter</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer & Charity -->
+        <footer class="bg-text-main text-white pt-24 pb-12 px-4 md:px-20 lg:px-40 relative overflow-hidden"
+            id="charity">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 mb-20 relative z-10">
+                <div class="bg-white/10 p-10 rounded-bubbly border-2 border-dashed border-white/20">
+                    <h3 class="text-3xl font-serif italic mb-6 text-primary">Let's Craft Together</h3>
+                    <p class="text-xl font-handwritten text-gray-300 mb-8">Whether you want to learn a new skill or join
+                        our charity club, my door is always open!</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input
+                            class="flex-1 bg-white/5 border-2 border-white/20 rounded-bubbly px-6 py-4 text-lg font-handwritten focus:ring-primary focus:border-primary placeholder:text-white/30"
+                            placeholder="Your email here..." type="email" />
+                        <button
+                            class="bg-primary text-white px-10 py-4 rounded-bubbly font-black text-lg hover:scale-105 transition-transform shadow-lg">Count
+                            Me In!</button>
+                    </div>
+                </div>
+
+                <!-- Contact & Socials -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-4">
+                    <div>
+                        <h4 class="text-2xl font-black mb-8 text-lemon font-playful">Get in Touch</h4>
+                        <ul class="space-y-6 text-lg font-handwritten">
+                            <li class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary">mail</span>
+                                meena4kids@gmail.com
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-primary">phone</span>
+                                (555) 123-4567
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black mb-8 text-lemon font-playful">Follow Our Art</h4>
+                        <div class="flex gap-6">
+                            <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
+                                href="#">
+                                <span class="material-symbols-outlined">camera_enhance</span>
+                            </a>
+                            <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
+                                href="#">
+                                <span class="material-symbols-outlined">play_circle</span>
+                            </a>
+                            <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
+                                href="#">
+                                <span class="material-symbols-outlined">favorite</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div
+                class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
+                <p>© 2026 Stitch & Spalsh Studio. Made with ❤️ and lots of threads.</p>
+                <div class="flex gap-10">
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
+                        Magic</a>
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
+                        Rules</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const classesBtn = document.getElementById("classesBtn");
+        const classesMenu = document.getElementById("classesMenu");
+        const classesArrow = document.getElementById("classesArrow");
+
+        classesBtn.addEventListener("click", () => {
+            classesMenu.classList.toggle("hidden");
+            classesArrow.classList.toggle("rotate-180");
+        });
+    </script>
+</body>
+
+</html>

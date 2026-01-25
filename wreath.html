@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Seasonal Wreath Making | Stitch &amp; Splatter</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Short+Stack&family=Itim&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF97B7", // Blush pink
+                        secondary: "#89b098", // Sage green
+                        "background-light": "#fffdf7", // Creamy background
+                        "background-dark": "#1a1818",
+                        accent: "#f8e08e", // Yellow accent
+                        darkText: "#3d3d3d",
+                        "mint": "#BEE9E2",    // Mint Green
+                        "lemon": "#FFF4BD",   // Lemon Yellow
+                        "text-main": "#4A3E3E",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "handwritten": ["Short Stack", "cursive"],
+                        "playful": ["Itim", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "full": "9999px",
+                        "bubbly": "3rem"
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        .sewing-line {
+            background-image: linear-gradient(to right, #89b098 50%, transparent 50%);
+            background-size: 12px 2px;
+            background-repeat: repeat-x;
+        }
+        .sewing-line-vertical {
+            background-image: linear-gradient(to bottom, #89b098 50%, transparent 50%);
+            background-size: 2px 12px;
+            background-repeat: repeat-y;
+        }
+        .dotted-bg {
+            background-image: radial-gradient(#89b098 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .doodle-leaf {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light font-display text-text-main transition-colors duration-300 scrapbook-bg">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+        <!-- Header Section -->
+        <header
+            class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-dashed border-primary/30 px-4 md:px-20 lg:px-40 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div
+                            class="size-12 bg-primary rounded-full flex items-center justify-center text-white rotate-3 shadow-lg">
+                            <span class="material-symbols-outlined">auto_fix</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tight font-serif italic text-primary">Stitch & Splash
+                        </h2>
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex items-center gap-8 font-handwritten text-lg">
+                    <!-- Classes dropdown -->
+                    <div class="relative">
+                        <button id="classesBtn"
+                            class="flex items-center gap-1 hover:text-primary transition-colors decoration-primary/30 hover:underline">
+                            Classes
+                            <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+                        </button>
+
+                        <div id="classesMenu"
+                            class="absolute left-0 top-full w-56 mt-2 rounded-xl bg-white shadow-lg p-2 hidden z-50">
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="sewing.html">
+                                5 week Sewing Class
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="mandala.html">
+                                Mandala Workshop
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="wreath.html">
+                                Seasonal Wreath Making
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- About Meenakshi link -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="about_meenakshi.html">
+                        About Meena
+                    </a>
+
+                    <!-- Contact → landing page section -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="index.html#charity">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <section
+            class="bg-background-light dark:bg-background-dark font-sans text-darkText dark:text-gray-100 antialiased overflow-x-hidden">
+            <section class="relative pt-16 pb-24 overflow-hidden">
+                <div class="dotted-bg absolute inset-0 opacity-10"></div>
+                <span
+                    class="material-symbols-outlined doodle-leaf text-6xl top-10 left-[10%] rotate-12 text-secondary">eco</span>
+                <span
+                    class="material-symbols-outlined doodle-leaf text-5xl bottom-20 right-[5%] -rotate-12 text-primary">local_florist</span>
+                <div class="max-w-7xl mx-auto px-6 relative">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h1 class="font-serif italic  text-5xl md:text-7xl mb-6 leading-tight">
+                                <span class="italic font-normal">Seasonal</span> <br />
+                                <span class="text-primary">Wreath Making</span> <br />
+                                <span class="italic font-normal">Workshop</span>
+                            </h1>
+                            <p class="font-handwritten text-lg mb-8 max-w-md text-gray-600 dark:text-gray-400">
+                                A comprehensive creative journey for middle school students and above. Master the art of
+                                floral
+                                design and traditional construction.
+                            </p>
+                            <div class="flex flex-wrap gap-4">
+                                <a class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
+                                    href="#booking">
+                                    Join the Workshop
+                                    <span
+                                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward_ios</span>
+                                </a>
+                                <div
+                                    class="flex items-center gap-3 px-6 py-4 rounded-full border border-primary/20 bg-white/50 dark:bg-gray-800/50">
+                                    <span class="material-symbols-outlined text-primary">groups</span>
+                                    <span class="font-medium text-sm">Ages 11+ Welcome</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
+                            <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/20 rounded-full blur-3xl">
+                            </div>
+                            <div class="relative bg-white dark:bg-gray-800 p-4 rounded-xl shadow-2xl -rotate-1">
+                                <img alt="Beautiful spring floral wreath"
+                                    class="rounded-lg w-full h-[650px] object-cover" src="pics/w8.JPG" />
+                                <div
+                                    class="absolute -bottom-6 -right-6 bg-accent text-darkText p-6 rounded-2xl shadow-xl flex flex-col items-center">
+                                    <span class="text-3xl font-bold">3</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Weeks</span>
+                                </div>
+                            </div>
+                            <span
+                                class="material-symbols-outlined absolute -top-10 right-10 text-4xl text-gray-300 -rotate-45">content_cut</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 bg-white/50 dark:bg-gray-900/50 relative overflow-hidden">
+                <div class="max-w-6xl mx-auto px-6">
+                    <div class="text-center mb-20">
+                        <h2 class="font-serif text-4xl mb-4 italic">The Crafting Path</h2>
+                        <p class="font-handwritten text-gray-500 max-w-md mx-auto">Our structured 3-week journey through
+                            seasonal flora
+                            and
+                            fauna.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 sewing-line -z-10 opacity-40">
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-12">
+                            <div class="group relative">
+                                <div
+                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-secondary/40 p-10 rounded-xl text-center hover:border-secondary transition-all h-full shadow-sm hover:shadow-md">
+                                    <div
+                                        class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-secondary group-hover:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined text-4xl">grid_view</span>
+                                    </div>
+                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">
+                                        Foundations &amp; Frames</h3>
+                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        Learn core
+                                        frames,
+                                        aesthetic concepts, and seasonal design ideas to build your base.</p>
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
+                                        01</span>
+                                </div>
+                            </div>
+                            <div class="group relative md:mt-16">
+                                <div
+                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-primary/40 p-10 rounded-xl text-center hover:border-primary transition-all h-full shadow-sm hover:shadow-md">
+                                    <div
+                                        class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined text-4xl">local_florist</span>
+                                    </div>
+                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">Fresh
+                                        Flower Festivity</h3>
+                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        Creating a
+                                        festive
+                                        wreath with fresh seasonal blooms on a professional oasis foam base.</p>
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
+                                        02</span>
+                                </div>
+                            </div>
+                            <div class="group relative">
+                                <div
+                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-accent/40 p-10 rounded-xl text-center hover:border-accent transition-all h-full shadow-sm hover:shadow-md">
+                                    <div
+                                        class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 text-darkText group-hover:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined text-4xl">hardware</span>
+                                    </div>
+                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">
+                                        Traditional Wiring</h3>
+                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        Making a
+                                        traditional
+                                        door wreath using professional wiring techniques for lasting structure.</p>
+                                    <span
+                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-darkText text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
+                                        03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="grid lg:grid-cols-2 gap-20 items-center">
+                        <div class="relative">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="space-y-4">
+                                    <img alt="Wreath materials"
+                                        class="rounded-xl w-full aspect-square object-cover shadow-lg"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuByYCJeY1sw6C49lvfj-yB6UwQnu3xOK4vCN1wUV6pC2dGKNktqzBKDWdFdBHCATgzAiHWqwRnjzmmtsyrZcB2_h-b7jPk89fOiXqqdhAr1-gavfC1mMaNMzm_HAO9Lz5plycYyebIQFsfPEf-LKX-5cCG_2RZrX7VO0hovJEco3Y6lpS-EgH_7kI7eIBUne8y7V3XggGDoYQ2wiIog8mRvx1jJKWeTcAuYsKx4KnJe1tYIOL1hLRewgdLIj10hdeN428MU4dO-oR42" />
+                                    <img alt="Close up of flowers"
+                                        class="rounded-xl w-full aspect-video object-cover shadow-lg"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY46BWh1_KAYvgLiglV66hk6IdufDbPS1-eWpdesZwfn3xtZYw0dms2_zrA_lbHy9cS7Zn3XSGS9CwTpN2LWppX-zNGEK9GLQRG89yr1UQpnAhtwZ5yJCQARrjdrCtJmfqeBtWr_0xjzeSpZIV8ws3oEnuKKpG5oGqu45oGtfWebQ0DbQe8cXo63A-KoPLDbyAbbg-BUjRKvxCo7gEdOV_xn5n061Wwk1tBJ4ye9gvqE5O-kIjLlh8j_W3TO6ISNwMbAkcacV4npWX" />
+                                </div>
+                                <div class="pt-12">
+                                    <img alt="Finished wreath"
+                                        class="rounded-xl w-full aspect-[4/5] object-cover shadow-lg scale-130"
+                                        src="pics/w3.JPG" />
+                                </div>
+                            </div>
+                            <div
+                                class="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary/20 rounded-full flex items-center justify-center rotate-12 border border-secondary/30">
+                                <span class="material-symbols-outlined text-secondary text-4xl">psychiatry</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-serif text-4xl mb-6 italic text-gray-800 dark:text-white">What You'll
+                                Learn</h2>
+                            <p class="font-handwritten dark:text-gray-400 mb-10 leading-relaxed">
+                                Gain professional-grade skills in a supportive, creative environment. No previous
+                                experience
+                                needed!
+                            </p>
+                            <div class="space-y-8">
+                                <div class="flex items-start gap-6 group">
+                                    <div
+                                        class="w-14 h-14 shrink-0 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all">
+                                        <span class="material-symbols-outlined text-3xl">architecture</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-black mb-3 font-playful text-[1.35rem] dark:text-gray-200">Frame
+                                            Building</h4>
+                                        <p class="font-handwritten text-sm text-gray-500">Constructing sturdy
+                                            foundations using natural
+                                            and metal
+                                            bases for various wreath styles.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-6 group">
+                                    <div
+                                        class="w-14 h-14 shrink-0 bg-primary/10 text-primary rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                                        <span class="material-symbols-outlined text-3xl">opacity</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-black mb-3 font-playful text-[1.35rem] dark:text-gray-200">
+                                            Floral Foam
+                                            Techniques</h4>
+                                        <p class="font-handwritten text-sm text-gray-500">Mastering hydration and
+                                            placement in oasis foam
+                                            for
+                                            fresh arrangements that last weeks.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-6 group">
+                                    <div
+                                        class="w-14 h-14 shrink-0 bg-accent/20 text-yellow-700 rounded-2xl flex items-center justify-center group-hover:bg-accent group-hover:text-darkText transition-all">
+                                        <span class="material-symbols-outlined text-3xl">reorder</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-black mb-3 font-playful text-[1.35rem] dark:text-gray-200">
+                                            Professional
+                                            Wiring
+                                        </h4>
+                                        <p class="font-handwritten text-sm text-gray-500">Traditional floristry wiring
+                                            for delicate stems
+                                            and
+                                            heavy foliage to ensure structural integrity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 px-6 relative" id="booking">
+                <span class="material-symbols-outlined doodle-leaf text-4xl top-0 left-1/4 text-primary">spa</span>
+                <span
+                    class="material-symbols-outlined doodle-leaf text-4xl bottom-0 right-1/4 text-secondary">potted_plant</span>
+                <div
+                    class="max-w-4xl mx-auto bg-primary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+                    <div class="dotted-bg absolute inset-0 opacity-20 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <span
+                            class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Enroll
+                            Now</span>
+                        <h2 class="font-serif text-4xl md:text-6xl text-white mb-8">Ready to create your <br /> <span
+                                class="italic underline decoration-accent decoration-wavy underline-offset-8">seasonal
+                                magic?</span></h2>
+                        <div
+                            class="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto border border-white/20 mb-10">
+                            <div class="grid md:grid-cols-2 gap-6 text-left mb-8">
+                                <div>
+                                    <p class="text-white/70 text-sm mb-1">Next Session Starts</p>
+                                    <p class="text-white font-bold text-lg">Monday, Nov 6th</p>
+                                </div>
+                                <div>
+                                    <p class="text-white/70 text-sm mb-1">Class Size</p>
+                                    <p class="text-white font-bold text-lg">Limited to 8 Students</p>
+                                </div>
+                            </div>
+                            <button
+                                class="w-full bg-white text-primary hover:bg-accent hover:text-darkText px-8 py-5 rounded-full font-bold text-xl transition-all shadow-xl flex items-center justify-center gap-3 group">
+                                Join the Workshop
+                                <span
+                                    class="material-symbols-outlined group-hover:rotate-12 transition-transform">auto_awesome</span>
+                            </button>
+                        </div>
+                        <p class="text-white/90 text-sm italic font-medium">"In our studio, mistakes are just happy
+                            accidents!"
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <footer class="bg-text-main text-white pt-12 pb-12 px-4 md:px-20 lg:px-40 relative overflow-hidden">
+                <div
+                    class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
+                    <p>© 2026 Stitch & Spalsh Studio. Made with ❤️ and lots of threads.</p>
+                    <div class="flex gap-10">
+                        <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
+                            Magic</a>
+                        <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
+                            Rules</a>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script>
+        const classesBtn = document.getElementById("classesBtn");
+        const classesMenu = document.getElementById("classesMenu");
+        const classesArrow = document.getElementById("classesArrow");
+
+        classesBtn.addEventListener("click", () => {
+            classesMenu.classList.toggle("hidden");
+            classesArrow.classList.toggle("rotate-180");
+        });
+    </script>
+
+</body>
+
+
+</html>

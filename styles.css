@@ -1,0 +1,68 @@
+/* 
+  Stitch & Splatter Studio Custom Styles
+  --------------------------------------
+  This file contains custom utilities and overrides for the landing page.
+  It complements the Tailwind CSS classes used in the HTML.
+*/
+
+/* --- Custom Utilities --- */
+
+/* Stitched Line Effect - used for section dividers/decorations */
+.stitched-line {
+    background-image: linear-gradient(to right, #FF97B7 50%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+}
+
+/* Bubbly Shadow - soft, colored shadow for playful depth */
+.bubbly-shadow {
+    box-shadow: 0 10px 25px -5px rgba(255, 151, 183, 0.2);
+}
+
+/* Material Symbols Adjustments */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* --- Backgrounds & Borders --- */
+
+/* Scrapbook Background - subtle dot pattern */
+.scrapbook-bg {
+    background-color: #FFFDF7;
+    background-image: radial-gradient(#FF97B7 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+}
+
+/* Hand Drawn Border - irregular radius for organic feel */
+.hand-drawn-border {
+    border: 3px solid #FF97B7;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+/* Dashed Sewing Path - used in course journey section */
+.sewing-path-dashed {
+    border-top: 3px dashed #FF97B7;
+}
+
+/* --- Navigation Components --- */
+
+/* Dropdown Menu - hidden by default, shown on hover */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    border: 2px solid #FF97B7;
+    padding: 0.5rem;
+    z-index: 50;
+}
+
+/* Show dropdown on hover of parent .group */
+.group:hover .dropdown-menu {
+    display: block;
+}

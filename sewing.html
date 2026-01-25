@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sewing Path | Stitch & Splatter Studio</title>
+
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Short+Stack&family=Itim&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FF97B7", // Blush Pink
+                        "mint": "#BEE9E2",    // Mint Green
+                        "lemon": "#FFF4BD",   // Lemon Yellow
+                        "background-light": "#FFFDF7",
+                        "text-main": "#4A3E3E",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "handwritten": ["Short Stack", "cursive"],
+                        "playful": ["Itim", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                        "full": "9999px",
+                        "bubbly": "3rem"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light font-display text-text-main transition-colors duration-300 scrapbook-bg">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+
+        <!-- Header Section -->
+        <header
+            class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b-2 border-dashed border-primary/30 px-4 md:px-20 lg:px-40 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div
+                            class="size-12 bg-primary rounded-full flex items-center justify-center text-white rotate-3 shadow-lg">
+                            <span class="material-symbols-outlined">auto_fix</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tight font-serif italic text-primary">Stitch & Splatter
+                        </h2>
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="hidden md:flex items-center gap-8 font-handwritten text-lg">
+                    <!-- Classes dropdown -->
+                    <div class="relative">
+                        <button id="classesBtn" class="flex items-center gap-1 hover:text-primary transition-colors">
+                            Classes
+                            <svg id="classesArrow" class="w-4 h-4 transition-transform duration-200" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+
+
+                        <div id="classesMenu"
+                            class="absolute left-0 top-full w-56 mt-2 rounded-xl bg-white shadow-lg p-2 hidden z-50">
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="sewing.html">
+                                5 week Sewing Class
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="mandala.html">
+                                Mandala Workshop
+                            </a>
+                            <a class="block px-4 py-2 hover:bg-lemon rounded-lg" href="wreath.html">
+                                Seasonal Wreath Making
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- About Meenakshi link -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="about_meenakshi.html">
+                        About Meena
+                    </a>
+
+                    <!-- Contact → landing page section -->
+                    <a class="hover:text-primary transition-colors decoration-primary/30 hover:underline"
+                        href="index.html#charity">
+                        Contact
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <section class="py-24 px-4 md:px-20 lg:px-40 relative overflow-hidden" id="course-path">
+                <span
+                    class="material-symbols-outlined absolute top-20 right-20 text-lemon text-9xl opacity-40">imagesmode</span>
+                <div class="text-center mb-20 relative z-10">
+                    <h1 class="text-5xl font-serif italic mb-4">The 5-Week Sewing Journey</h1>
+                    <p class="text-xl font-handwritten text-gray-600 max-w-2xl mx-auto">Follow our dashed sewing line to
+                        master the art of making!</p>
+                </div>
+
+                <div
+                    class="relative flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 max-w-6xl mx-auto">
+                    <!-- Connecting Dashed Line -->
+                    <div
+                        class="absolute top-1/2 left-0 w-full h-0 border-t-4 border-dashed border-primary/40 -translate-y-1/2 hidden lg:block">
+                    </div>
+
+                    <!-- Steps -->
+                    <div class="relative z-10 flex flex-col items-center text-center group w-full lg:w-48">
+                        <div
+                            class="size-20 bg-white border-4 border-primary rounded-full flex items-center justify-center shadow-xl mb-6 group-hover:scale-110 transition-transform -rotate-6">
+                            <span class="text-2xl font-black text-primary font-playful">01</span>
+                        </div>
+                        <h4 class="font-black text-lg mb-2 font-playful">Pillowcase</h4>
+                        <p class="text-sm font-handwritten text-gray-500 mb-4">Straight seams & happy fingers.</p>
+                        <div
+                            class="size-32 rounded-bubbly bg-lemon p-2 shadow-lg rotate-2 overflow-hidden border-2 border-white">
+                            <img alt="Pillowcase" class="size-full object-cover rounded-bubbly"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC31s5HBaiCk0BwH3S_pPTZps1Y7jNrOYmlPRgBU5vtAg5B9YLrzzSwdMZut0ai0_smh6H17m0LmVT6xA3kIT3fqiZ2rupvK2Mo0fBGxYtIPVYiPGqml1jl2sOG8MExhuLPk0MGgAaKFdOkUp-CNPZh10m1q58f-tVKEUl63XQofjRiC1UmbZ6hp82Tjg8jrUpKe0KiB6-eKPWIC-lZ-zdsl760KPvYQa2PLCSonDKWK3KhWaxwGeKh3TX9Cmds4OLHwCv-7oo9I8of" />
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group w-full lg:w-48">
+                        <div
+                            class="size-20 bg-white border-4 border-primary rounded-full flex items-center justify-center shadow-xl mb-6 group-hover:scale-110 transition-transform rotate-6">
+                            <span class="text-2xl font-black text-primary font-playful">02</span>
+                        </div>
+                        <h4 class="font-black text-lg mb-2 font-playful">Hand Warmers</h4>
+                        <p class="text-sm font-handwritten text-gray-500 mb-4">Curvy edges & cozy feelings.</p>
+                        <div
+                            class="size-32 rounded-bubbly bg-mint p-2 shadow-lg -rotate-2 overflow-hidden border-2 border-white">
+                            <img alt="Hand Warmers" class="size-full object-cover rounded-bubbly"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh1XKsEmzHnJ8byTpDXciP1Gg2LKAy5rnb8zFwlBtVPfpJPjtnOI3sGOhV33-qCVY4RQDzK0dN0V0k3sbBBZPZyF8r0IF934_zm4TO8cKSxPZrhMPDqfNErLxvnZLHYUX3ZWiUslnp31EMWezX8zPkAoMC-4YaoHQvD1GzziRsIA54XDkX1He8YHJ4Ytf0sW0TlvO4_dcGIdo1-P6-P8nv4gsQiVW33TeGW4xVkIBX6UQTLrInG8haHuJNdckv8Z4wnddA0tThEi1D" />
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group w-full lg:w-48">
+                        <div
+                            class="size-20 bg-white border-4 border-primary rounded-full flex items-center justify-center shadow-xl mb-6 group-hover:scale-110 transition-transform -rotate-3">
+                            <span class="text-2xl font-black text-primary font-playful">03</span>
+                        </div>
+                        <h4 class="font-black text-lg mb-2 font-playful">Quilted Coasters</h4>
+                        <p class="text-sm font-handwritten text-gray-500 mb-4">Bouncy batting & tiny stitches.</p>
+                        <div
+                            class="size-32 rounded-bubbly bg-lemon p-2 shadow-lg rotate-6 overflow-hidden border-2 border-white">
+                            <img alt="Coasters" class="size-full object-cover rounded-bubbly"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbQDZOQfAsQzXTMYnuqk7mLUf9rAT14KBQFCoofrm0tTTCZfzqsJ-tNgXyXPMCbu-nFLv5GUZOOp1sX-8g-qmMeCGPYwC6DOzDbd_DXdxdEVOEsqw71z9rNBHkzOBM-s7ZX1NaawH3Kv3dLqYDEasWK81QOv92QX1bjTyta0T9LsvRJkB4zt74j6bNA8s-M5_WQVl5ztzwBcEVvmxdR3I-XcfleoOdkBIQ9G4I8gN6oxwXD5p8ORFmet4BFXfgtxpkYZvezvrn2SyG" />
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group w-full lg:w-48">
+                        <div
+                            class="size-20 bg-white border-4 border-primary rounded-full flex items-center justify-center shadow-xl mb-6 group-hover:scale-110 transition-transform rotate-12">
+                            <span class="text-2xl font-black text-primary font-playful">04</span>
+                        </div>
+                        <h4 class="font-black text-lg mb-2 font-playful">Drawstring Bag</h4>
+                        <p class="text-sm font-handwritten text-gray-500 mb-4">Pulling strings & making magic.</p>
+                        <div
+                            class="size-32 rounded-bubbly bg-mint p-2 shadow-lg -rotate-6 overflow-hidden border-2 border-white">
+                            <img alt="Bag" class="size-full object-cover rounded-bubbly"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo-BazmP3cm9yHxzNtBrRwDrVf9knP9ShNonTrxDFlejnnyCEPNwfpy97j5MgixeP-FXz9mTYTkPX10-u0TzoDWrrHLx2hJz-sg8kRenFJBIDSq1oiUS15cmJ9_8O19tZ9AdadmoqL0V0qtRJ3-PUM8BJTW8bD-pPkSY7dEDonjlPDOXBRTYXTMErY_GxeXxh-5As9jVEUWHo6ZgReaswWzcx1YHUYpcg5_HoxYGoIgZKDX5y_bkFklas7kNc5g2S7cdFCHxIfYKh6" />
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group w-full lg:w-48">
+                        <div
+                            class="size-24 bg-primary border-4 border-white rounded-full flex items-center justify-center shadow-2xl mb-6 group-hover:scale-110 transition-transform -rotate-12">
+                            <span class="text-3xl font-black text-white font-playful">05</span>
+                        </div>
+                        <h4 class="font-black text-xl mb-2 text-primary font-playful">The Masterpiece!</h4>
+                        <p class="text-sm font-handwritten text-gray-500 mb-4">A pillow of many colors.</p>
+                        <div
+                            class="size-36 rounded-bubbly bg-lemon p-2 shadow-2xl rotate-3 overflow-hidden border-4 border-primary/30">
+                            <img alt="Patchwork" class="size-full object-cover rounded-bubbly"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjsI0GaBKLvSubLnY96_f26_z-AF_DPvf5xEaft8XYiaZDBK46mQ-wgCptHP1TQXvKxsQG1i1cpI6m2Ad8wkrwxGE2wOXomjIW6N7QS-ATNVBFGL3Qkds8mYRDI5NNAx8cZQKYB7jt7n6s58b7JaU3oXgwGEP1eapa1fGyFDEcmQwFV-PtOPl8L4xdZWCCuOpyNk78csz--hhXQwgwU81aNDd4AEn35XVd_96tQQ1NxDs4P7VpoGZj67oON0zMnOiykMNogBV5u8Dr" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-text-main text-white pt-12 pb-12 px-4 md:px-20 lg:px-40 relative overflow-hidden">
+            <div
+                class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
+                <p>© 2023 Stitch & Splatter Studio. Made with ❤️ and lots of threads.</p>
+                <div class="flex gap-10">
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
+                        Magic</a>
+                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
+                        Rules</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const classesBtn = document.getElementById("classesBtn");
+        const classesMenu = document.getElementById("classesMenu");
+        const classesArrow = document.getElementById("classesArrow");
+
+        classesBtn.addEventListener("click", () => {
+            classesMenu.classList.toggle("hidden");
+            classesArrow.classList.toggle("rotate-180");
+        });
+    </script>
+</body>
+
+</html>
