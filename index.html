@@ -77,7 +77,8 @@
                         <button id="classesBtn"
                             class="flex items-center gap-1 hover:text-primary transition-colors decoration-primary/30 hover:underline">
                             Classes
-                            <span class="material-symbols-outlined text-sm">keyboard_arrow_down</span>
+                            <span id="classesArrow"
+                                class="material-symbols-outlined text-sm transition-transform">keyboard_arrow_down</span>
                         </button>
 
                         <div id="classesMenu"
@@ -493,34 +494,32 @@
                         <h4 class="text-2xl font-black mb-8 text-lemon font-playful">Follow Our Art</h4>
                         <div class="flex gap-6">
                             <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
-                                href="#">
+                                href="https://www.instagram.com/meena4kraft" target="_blank" rel="noopener noreferrer">
                                 <span class="material-symbols-outlined">camera_enhance</span>
                             </a>
                             <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
-                                href="#">
+                                href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener noreferrer">
                                 <span class="material-symbols-outlined">play_circle</span>
                             </a>
-                            <a class="size-14 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all hover:scale-110 shadow-sm"
-                                href="#">
-                                <span class="material-symbols-outlined">favorite</span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
             </div>
+    </div>
 
-            <!-- Copyright -->
-            <div
-                class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
-                <p>© 2026 Stitch & Spalsh Studio. Made with ❤️ and lots of threads.</p>
-                <div class="flex gap-10">
-                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
-                        Magic</a>
-                    <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
-                        Rules</a>
-                </div>
-            </div>
-        </footer>
+    <!-- Copyright -->
+    <div
+        class="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm font-handwritten text-gray-400">
+        <p>© 2026 Stitch & Spalsh Studio. Made with ❤️ and lots of threads.</p>
+        <div class="flex gap-10">
+            <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Privacy
+                Magic</a>
+            <a class="hover:text-primary transition-colors underline decoration-white/20" href="#">Studio
+                Rules</a>
+        </div>
+    </div>
+    </footer>
     </div>
     <script>
         const classesBtn = document.getElementById("classesBtn");
