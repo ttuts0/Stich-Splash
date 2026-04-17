@@ -127,8 +127,28 @@
                         Contact
                     </a>
                 </nav>
+
+                <!-- Mobile hamburger -->
+                <button id="mobileBtn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
         </header>
+
+        <!-- Mobile nav overlay -->
+        <div id="mobileNav" class="hidden fixed inset-0 z-[60] bg-white flex flex-col items-center justify-center gap-6 font-handwritten text-2xl text-text-main">
+            <button id="mobileClose" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+            <div class="size-16 bg-primary rounded-full flex items-center justify-center text-white shadow-lg mb-2">
+                <span class="material-symbols-outlined text-3xl">auto_fix</span>
+            </div>
+            <a href="sewing.html" class="hover:text-primary transition-colors py-1">5 Week Sewing Class</a>
+            <a href="mandala.html" class="hover:text-primary transition-colors py-1">Mandala Workshop</a>
+            <a href="wreath.html" class="hover:text-primary transition-colors py-1">Seasonal Wreath Making</a>
+            <a href="about_meenakshi.html" class="hover:text-primary transition-colors py-1">About Meena</a>
+            <a href="index.html#charity" class="hover:text-primary transition-colors py-1">Contact</a>
+        </div>
 
         <section
             class="bg-background-light dark:bg-background-dark font-sans text-darkText dark:text-gray-100 antialiased overflow-x-hidden">
@@ -147,9 +167,7 @@
                                 <span class="italic font-normal">Workshop</span>
                             </h1>
                             <p class="font-handwritten text-lg mb-8 max-w-md text-gray-600 dark:text-gray-400">
-                                A comprehensive creative journey for middle school students and above. Master the art of
-                                floral
-                                design and traditional construction.
+                                Choose from 4 unique standalone workshops — from beginner-friendly to advanced. Each session runs 2–4 hours with all materials provided.
                             </p>
                             <div class="flex flex-wrap gap-4">
                                 <a class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
@@ -171,11 +189,11 @@
                             </div>
                             <div class="relative bg-white dark:bg-gray-800 p-4 rounded-xl shadow-2xl -rotate-1">
                                 <img alt="Beautiful spring floral wreath"
-                                    class="rounded-lg w-full h-[650px] object-cover" src="pics/w8.JPG" />
+                                    class="rounded-lg w-full h-[300px] sm:h-[450px] lg:h-[650px] object-cover" src="pics/wreath.JPG" />
                                 <div
-                                    class="absolute -bottom-6 -right-6 bg-accent text-darkText p-6 rounded-2xl shadow-xl flex flex-col items-center">
-                                    <span class="text-3xl font-bold">3</span>
-                                    <span class="text-xs font-bold uppercase tracking-tighter">Weeks</span>
+                                    class="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-accent text-darkText p-4 md:p-6 rounded-2xl shadow-xl flex flex-col items-center">
+                                    <span class="text-3xl font-bold">4</span>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Styles</span>
                                 </div>
                             </div>
                             <span
@@ -186,73 +204,88 @@
             </section>
             <section class="py-24 bg-white/50 dark:bg-gray-900/50 relative overflow-hidden">
                 <div class="max-w-6xl mx-auto px-6">
-                    <div class="text-center mb-20">
-                        <h2 class="font-serif text-4xl mb-4 italic">The Crafting Path</h2>
-                        <p class="font-handwritten text-gray-500 max-w-md mx-auto">Our structured 3-week journey through
-                            seasonal flora
-                            and
-                            fauna.</p>
+                    <div class="text-center mb-14">
+                        <h2 class="font-serif text-4xl mb-4 italic">Choose Your Wreath</h2>
+                        <p class="font-handwritten text-gray-500 max-w-lg mx-auto">Each workshop is a standalone session — pick the style that calls to you. All materials are provided.</p>
                     </div>
-                    <div class="relative">
-                        <div class="hidden md:block absolute top-[40%] left-0 w-full h-1 sewing-line -z-10 opacity-40">
+                    <div class="grid md:grid-cols-2 gap-8">
+
+                        <!-- Magnolia Wreath -->
+                        <div class="group relative bg-white dark:bg-gray-800 border-2 border-dashed border-secondary/40 p-8 rounded-xl hover:border-secondary transition-all shadow-sm hover:shadow-md">
+                            <div class="flex items-start justify-between mb-5">
+                                <div>
+                                    <span class="inline-block bg-accent text-darkText text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2">Intermediate – Advanced</span>
+                                    <h3 class="font-playful font-black text-2xl dark:text-gray-100">Magnolia Wreath</h3>
+                                </div>
+                                <div class="text-right shrink-0 ml-4">
+                                    <p class="text-3xl font-black text-secondary">$110</p>
+                                    <p class="text-xs font-handwritten text-gray-400 mt-0.5">4 hours</p>
+                                </div>
+                            </div>
+                            <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">local_florist</span>
+                            </div>
+                            <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">Create a stunning wreath with lush magnolia blooms and elegant seasonal foliage.</p>
                         </div>
-                        <div class="grid md:grid-cols-3 gap-12">
-                            <div class="group relative">
-                                <div
-                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-secondary/40 p-10 rounded-xl text-center hover:border-secondary transition-all h-full shadow-sm hover:shadow-md">
-                                    <div
-                                        class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-secondary group-hover:scale-110 transition-transform">
-                                        <span class="material-symbols-outlined text-4xl">grid_view</span>
-                                    </div>
-                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">
-                                        Foundations &amp; Frames</h3>
-                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
-                                        Learn core
-                                        frames,
-                                        aesthetic concepts, and seasonal design ideas to build your base.</p>
-                                    <span
-                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
-                                        01</span>
+
+                        <!-- Olive Wreath -->
+                        <div class="group relative bg-white dark:bg-gray-800 border-2 border-dashed border-primary/40 p-8 rounded-xl hover:border-primary transition-all shadow-sm hover:shadow-md">
+                            <div class="flex items-start justify-between mb-5">
+                                <div>
+                                    <span class="inline-block bg-secondary/20 text-secondary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2">Easy</span>
+                                    <h3 class="font-playful font-black text-2xl dark:text-gray-100">Olive Wreath</h3>
+                                </div>
+                                <div class="text-right shrink-0 ml-4">
+                                    <p class="text-3xl font-black text-primary">$110</p>
+                                    <p class="text-xs font-handwritten text-gray-400 mt-0.5">4 hours</p>
                                 </div>
                             </div>
-                            <div class="group relative md:mt-16">
-                                <div
-                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-primary/40 p-10 rounded-xl text-center hover:border-primary transition-all h-full shadow-sm hover:shadow-md">
-                                    <div
-                                        class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition-transform">
-                                        <span class="material-symbols-outlined text-4xl">local_florist</span>
-                                    </div>
-                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">Fresh
-                                        Flower Festivity</h3>
-                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
-                                        Creating a
-                                        festive
-                                        wreath with fresh seasonal blooms on a professional oasis foam base.</p>
-                                    <span
-                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
-                                        02</span>
-                                </div>
+                            <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">eco</span>
                             </div>
-                            <div class="group relative">
-                                <div
-                                    class="bg-white dark:bg-gray-800 border-2 border-dashed border-accent/40 p-10 rounded-xl text-center hover:border-accent transition-all h-full shadow-sm hover:shadow-md">
-                                    <div
-                                        class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 text-darkText group-hover:scale-110 transition-transform">
-                                        <span class="material-symbols-outlined text-4xl">hardware</span>
-                                    </div>
-                                    <h3 class="font-black mb-3 font-playful text-[1.5rem] dark:text-gray-200">
-                                        Traditional Wiring</h3>
-                                    <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">
-                                        Making a
-                                        traditional
-                                        door wreath using professional wiring techniques for lasting structure.</p>
-                                    <span
-                                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-darkText text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Week
-                                        03</span>
-                                </div>
-                            </div>
+                            <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">A beautiful, timeless olive branch wreath — perfect for first-timers and beginners.</p>
                         </div>
+
+                        <!-- Succulent Wreath -->
+                        <div class="group relative bg-white dark:bg-gray-800 border-2 border-dashed border-primary/40 p-8 rounded-xl hover:border-primary transition-all shadow-sm hover:shadow-md">
+                            <div class="flex items-start justify-between mb-5">
+                                <div>
+                                    <span class="inline-block bg-primary/15 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2">Advanced</span>
+                                    <h3 class="font-playful font-black text-2xl dark:text-gray-100">Succulent Wreath</h3>
+                                </div>
+                                <div class="text-right shrink-0 ml-4">
+                                    <p class="text-3xl font-black text-primary">$150</p>
+                                    <p class="text-xs font-handwritten text-gray-400 mt-0.5">4 hours</p>
+                                </div>
+                            </div>
+                            <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">spa</span>
+                            </div>
+                            <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">Craft a lush, showstopping succulent wreath with real or preserved plants — a true masterpiece.</p>
+                        </div>
+
+                        <!-- Foam Wreath with Silk Flowers -->
+                        <div class="group relative bg-white dark:bg-gray-800 border-2 border-dashed border-accent/60 p-8 rounded-xl hover:border-accent transition-all shadow-sm hover:shadow-md">
+                            <div class="flex items-start justify-between mb-5">
+                                <div>
+                                    <span class="inline-block bg-secondary/20 text-secondary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2">Easy</span>
+                                    <h3 class="font-playful font-black text-2xl dark:text-gray-100">Foam Wreath with Silk Flowers</h3>
+                                </div>
+                                <div class="text-right shrink-0 ml-4">
+                                    <p class="text-3xl font-black text-yellow-600">$100</p>
+                                </div>
+                            </div>
+                            <div class="w-14 h-14 bg-accent/20 rounded-full flex items-center justify-center mb-4 text-yellow-700 group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-3xl">yard</span>
+                            </div>
+                            <p class="font-handwritten text-gray-600 dark:text-gray-400 leading-relaxed">Design a colourful, long-lasting silk flower foam wreath — easy, fun, and endlessly customisable.</p>
+                        </div>
+
                     </div>
+                    <p class="text-center font-handwritten text-gray-500 mt-10 flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-secondary">check_circle</span>
+                        All materials provided for every workshop
+                    </p>
                 </div>
             </section>
             <section class="py-24">
@@ -340,40 +373,105 @@
             </section>
             <section class="py-24 px-6 relative" id="booking">
                 <span class="material-symbols-outlined doodle-leaf text-4xl top-0 left-1/4 text-primary">spa</span>
-                <span
-                    class="material-symbols-outlined doodle-leaf text-4xl bottom-0 right-1/4 text-secondary">potted_plant</span>
-                <div
-                    class="max-w-4xl mx-auto bg-primary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
-                    <div class="dotted-bg absolute inset-0 opacity-20 pointer-events-none"></div>
-                    <div class="relative z-10">
-                        <span
-                            class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Enroll
-                            Now</span>
-                        <h2 class="font-serif text-4xl md:text-6xl text-white mb-8">Ready to create your <br /> <span
-                                class="italic underline decoration-accent decoration-wavy underline-offset-8">seasonal
-                                magic?</span></h2>
-                        <div
-                            class="bg-white/10 backdrop-blur-md rounded-2xl p-8 max-w-xl mx-auto border border-white/20 mb-10">
-                            <div class="grid md:grid-cols-2 gap-6 text-left mb-8">
-                                <div>
-                                    <p class="text-white/70 text-sm mb-1">Next Session Starts</p>
-                                    <p class="text-white font-bold text-lg">Monday, Nov 6th</p>
-                                </div>
-                                <div>
-                                    <p class="text-white/70 text-sm mb-1">Class Size</p>
-                                    <p class="text-white font-bold text-lg">Limited to 8 Students</p>
-                                </div>
+                <span class="material-symbols-outlined doodle-leaf text-4xl bottom-0 right-1/4 text-secondary">potted_plant</span>
+                <div class="max-w-5xl mx-auto">
+                    <!-- Header -->
+                    <div class="text-center mb-12">
+                        <span class="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Enroll Now</span>
+                        <h2 class="font-serif text-4xl md:text-5xl mb-6">Ready to create your <br /><span class="italic text-primary underline decoration-wavy decoration-accent underline-offset-8">seasonal magic?</span></h2>
+                        <div class="flex flex-wrap justify-center gap-4 font-handwritten">
+                            <div class="flex items-center gap-2 bg-white rounded-full px-5 py-3 shadow-sm border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-lg">schedule</span>
+                                <span>10:00 am – 2:00 pm</span>
                             </div>
-                            <button
-                                class="w-full bg-white text-primary hover:bg-accent hover:text-darkText px-8 py-5 rounded-full font-bold text-xl transition-all shadow-xl flex items-center justify-center gap-3 group">
-                                Join the Workshop
-                                <span
-                                    class="material-symbols-outlined group-hover:rotate-12 transition-transform">auto_awesome</span>
+                            <div class="flex items-center gap-2 bg-white rounded-full px-5 py-3 shadow-sm border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-lg">payments</span>
+                                <span><strong>$100–$150</strong> per workshop · all materials included</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-white rounded-full px-5 py-3 shadow-sm border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-lg">event_repeat</span>
+                                <span>Every other Saturday</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Calendar -->
+                    <h3 class="font-serif italic text-2xl text-center mb-2 text-gray-700">2026 Schedule</h3>
+                    <p class="font-handwritten text-sm text-center text-gray-400 mb-6 flex items-center justify-center gap-2">
+                        <span style="display:inline-flex;width:18px;height:18px;background:#FF97B7;border-radius:50%;align-items:center;justify-content:center;color:white;font-size:8px">✦</span>
+                        = available class date
+                    </p>
+                    <div class="max-w-sm mx-auto mb-12">
+                        <!-- Nav row -->
+                        <div class="flex items-center justify-between mb-4 px-1">
+                            <button id="wcal-prev"
+                                class="w-10 h-10 rounded-full bg-white shadow-sm border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all disabled:opacity-25 disabled:pointer-events-none">
+                                <span class="material-symbols-outlined" style="font-size:20px">chevron_left</span>
+                            </button>
+                            <span id="wcal-label" class="font-playful font-bold text-xl text-gray-700"></span>
+                            <button id="wcal-next"
+                                class="w-10 h-10 rounded-full bg-white shadow-sm border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all disabled:opacity-25 disabled:pointer-events-none">
+                                <span class="material-symbols-outlined" style="font-size:20px">chevron_right</span>
                             </button>
                         </div>
-                        <p class="text-white/90 text-sm italic font-medium">"In our studio, mistakes are just happy
-                            accidents!"
-                        </p>
+                        <!-- Calendar card -->
+                        <div class="bg-white rounded-3xl p-5 shadow-xl border border-gray-100">
+                            <div id="wcal-grid" class="grid grid-cols-7 text-center"></div>
+                        </div>
+                    </div>
+                    <script>
+                    (function(){
+                        var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+                        var DW=['S','M','T','W','T','F','S'];
+                        var data=[
+                            {m:4,h:[9,23]},{m:5,h:[6,20]},{m:6,h:[4,18]},{m:7,h:[1,15,29]},
+                            {m:8,h:[12,26]},{m:9,h:[10,24]},{m:10,h:[7,21]},{m:11,h:[5,19]}
+                        ];
+                        var idx=0;
+                        var prev=document.getElementById('wcal-prev');
+                        var next=document.getElementById('wcal-next');
+                        var label=document.getElementById('wcal-label');
+                        var grid=document.getElementById('wcal-grid');
+                        function render(){
+                            var d=data[idx];
+                            label.textContent=MN[d.m]+' 2026';
+                            prev.disabled=idx===0;
+                            next.disabled=idx===data.length-1;
+                            var firstDay=new Date(2026,d.m,1).getDay();
+                            var total=new Date(2026,d.m+1,0).getDate();
+                            var html='';
+                            DW.forEach(function(l,i){
+                                html+='<div style="font-size:10px;font-weight:700;color:'+(i===6?'#FF97B7':'#9ca3af')+';padding-bottom:10px">'+l+'</div>';
+                            });
+                            for(var i=0;i<firstDay;i++) html+='<div></div>';
+                            for(var day=1;day<=total;day++){
+                                if(d.h.indexOf(day)>=0){
+                                    html+='<div style="display:flex;align-items:center;justify-content:center;padding:3px 0"><span style="width:32px;height:32px;background:#FF97B7;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:800;box-shadow:0 3px 10px rgba(255,151,183,.45)">'+day+'</span></div>';
+                                } else {
+                                    html+='<div style="font-size:12px;color:#bbb;height:38px;display:flex;align-items:center;justify-content:center">'+day+'</div>';
+                                }
+                            }
+                            grid.innerHTML=html;
+                        }
+                        prev.addEventListener('click',function(){if(idx>0){idx--;render();}});
+                        next.addEventListener('click',function(){if(idx<data.length-1){idx++;render();}});
+                        render();
+                    })();
+                    </script>
+
+                    <!-- Booking CTA -->
+                    <div class="bg-primary rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+                        <div class="dotted-bg absolute inset-0 opacity-20 pointer-events-none"></div>
+                        <div class="relative z-10">
+                            <p class="text-white/90 font-handwritten text-lg mb-1">To book or enquire, reach us:</p>
+                            <p class="text-white font-playful font-bold text-2xl mb-8">Monday – Friday &nbsp;·&nbsp; 1:00 – 3:00 pm</p>
+                            <a href="https://forms.gle/e1X57UDhPdr88hZY7" target="_blank"
+                                class="inline-flex items-center gap-3 bg-white text-primary hover:bg-accent hover:text-darkText px-10 py-5 rounded-full font-bold text-xl transition-all shadow-xl group">
+                                Sign Up via Google Form
+                                <span class="material-symbols-outlined group-hover:rotate-12 transition-transform">open_in_new</span>
+                            </a>
+                            <p class="text-white/80 text-sm mt-6 italic font-medium">"In our studio, mistakes are just happy accidents!"</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -400,6 +498,8 @@
             classesMenu.classList.toggle("hidden");
             classesArrow.classList.toggle("rotate-180");
         });
+        document.getElementById('mobileBtn').addEventListener('click', function(){ document.getElementById('mobileNav').classList.remove('hidden'); });
+        document.getElementById('mobileClose').addEventListener('click', function(){ document.getElementById('mobileNav').classList.add('hidden'); });
     </script>
 
 </body>

@@ -127,8 +127,28 @@
                         Contact
                     </a>
                 </nav>
+
+                <!-- Mobile hamburger -->
+                <button id="mobileBtn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
         </header>
+
+        <!-- Mobile nav overlay -->
+        <div id="mobileNav" class="hidden fixed inset-0 z-[60] bg-white flex flex-col items-center justify-center gap-6 font-handwritten text-2xl text-text-main">
+            <button id="mobileClose" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+            <div class="size-16 bg-primary rounded-full flex items-center justify-center text-white shadow-lg mb-2">
+                <span class="material-symbols-outlined text-3xl">auto_fix</span>
+            </div>
+            <a href="sewing.html" class="hover:text-primary transition-colors py-1">5 Week Sewing Class</a>
+            <a href="mandala.html" class="hover:text-primary transition-colors py-1">Mandala Workshop</a>
+            <a href="wreath.html" class="hover:text-primary transition-colors py-1">Seasonal Wreath Making</a>
+            <a href="about_meenakshi.html" class="hover:text-primary transition-colors py-1">About Meena</a>
+            <a href="index.html#charity" class="hover:text-primary transition-colors py-1">Contact</a>
+        </div>
         <main class="flex-1">
             <section class="relative px-4 md:px-20 lg:px-40 py-16 md:py-24 overflow-hidden">
                 <span
@@ -302,6 +322,8 @@
             classesMenu.classList.toggle("hidden");
             classesArrow.classList.toggle("rotate-180");
         });
+        document.getElementById('mobileBtn').addEventListener('click', function(){ document.getElementById('mobileNav').classList.remove('hidden'); });
+        document.getElementById('mobileClose').addEventListener('click', function(){ document.getElementById('mobileNav').classList.add('hidden'); });
     </script>
 </body>
 

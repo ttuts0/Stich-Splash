@@ -107,8 +107,28 @@
                         Contact
                     </a>
                 </nav>
+
+                <!-- Mobile hamburger -->
+                <button id="mobileBtn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
         </header>
+
+        <!-- Mobile nav overlay -->
+        <div id="mobileNav" class="hidden fixed inset-0 z-[60] bg-white flex flex-col items-center justify-center gap-6 font-handwritten text-2xl text-text-main">
+            <button id="mobileClose" class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+            <div class="size-16 bg-primary rounded-full flex items-center justify-center text-white shadow-lg mb-2">
+                <span class="material-symbols-outlined text-3xl">auto_fix</span>
+            </div>
+            <a href="sewing.html" class="hover:text-primary transition-colors py-1">5 Week Sewing Class</a>
+            <a href="mandala.html" class="hover:text-primary transition-colors py-1">Mandala Workshop</a>
+            <a href="wreath.html" class="hover:text-primary transition-colors py-1">Seasonal Wreath Making</a>
+            <a href="about_meenakshi.html" class="hover:text-primary transition-colors py-1">About Meena</a>
+            <a href="index.html#charity" class="hover:text-primary transition-colors py-1">Contact</a>
+        </div>
 
         <main class="flex-1">
 
@@ -237,8 +257,8 @@
                             class="inline-block bg-primary text-white text-xs font-black px-3 py-1 rounded-full uppercase mb-4 font-handwritten">Week
                             01</span>
                         <div class="mb-4 text-primary"><span class="material-symbols-outlined text-4xl">bed</span></div>
-                        <h5 class="font-playful text-xl mb-2 font-bold">Pillowcase</h5>
-                        <p class="text-sm font-handwritten text-gray-500">Master machine basics and straight seams.</p>
+                        <h5 class="font-playful text-xl mb-2 font-bold w-full text-center">Pillowcase</h5>
+                        <p class="text-sm font-handwritten text-gray-500 w-full text-center">Master machine basics and straight seams.</p>
                     </div>
 
                     <!-- Week 2 -->
@@ -249,9 +269,8 @@
                             02</span>
                         <div class="mb-4 text-mint-600"><span
                                 class="material-symbols-outlined text-4xl">microwave</span></div>
-                        <h5 class="font-playful text-xl mb-2 font-bold">Rice Bag Hand Warmers</h5>
-                        <p class="text-sm font-handwritten text-gray-500">Learn about heat-safe materials for different
-                            projects.</p>
+                        <h5 class="font-playful text-xl mb-2 font-bold w-full text-center">Rice Bag Hand Warmers</h5>
+                        <p class="text-sm font-handwritten text-gray-500 w-full text-center">Learn about heat-safe materials for different projects.</p>
                     </div>
 
                     <!-- Week 3 -->
@@ -262,10 +281,8 @@
                             03</span>
                         <div class="mb-4 text-yellow-500"><span class="material-symbols-outlined text-4xl">coffee</span>
                         </div>
-                        <h5 class="font-playful text-xl mb-2 font-bold">Hot Pad</h5>
-                        <p class="text-sm font-handwritten text-gray-500">Functionality with flair. Make stylish
-                            coasters or hot pads.
-                        </p>
+                        <h5 class="font-playful text-xl mb-2 font-bold w-full text-center">Hot Pad</h5>
+                        <p class="text-sm font-handwritten text-gray-500 w-full text-center">Functionality with flair. Make stylish coasters or hot pads.</p>
                     </div>
 
                     <!-- Week 4 -->
@@ -276,13 +293,13 @@
                             04</span>
                         <div class="mb-4 text-primary"><span
                                 class="material-symbols-outlined text-4xl">shopping_bag</span></div>
-                        <h5 class="font-playful text-xl mb-2 font-bold">Drawstring Bag</h5>
-                        <p class="text-sm font-handwritten text-gray-500">Perfect your closures and finishes.</p>
+                        <h5 class="font-playful text-xl mb-2 font-bold w-full text-center">Drawstring Bag</h5>
+                        <p class="text-sm font-handwritten text-gray-500 w-full text-center">Perfect your closures and finishes.</p>
                     </div>
 
                     <!-- Week 5 -->
                     <div
-                        class="bg-white p-6 rounded-3xl border-2 border-dashed border-mint hover:border-mint transition-all text-center flex flex-col items-center shadow-md rotate-1">
+                        class="bg-white p-6 rounded-3xl border-2 border-dashed border-mint hover:border-mint transition-all text-center flex flex-col items-center shadow-md rotate-1 relative">
                         <span
                             class="inline-block bg-mint text-text-main text-xs font-black px-3 py-1 rounded-full uppercase mb-4 font-handwritten">Week
                             05</span>
@@ -291,6 +308,10 @@
                         <h5 class="font-playful text-xl mb-2 font-bold">Nine Square Patchwork Pillow</h5>
                         <p class="text-sm font-handwritten text-gray-500">The Masterpiece Project: Combine all your
                             sewing skills to create a beautiful patchwork pillow.</p>
+                        <div class="mt-3 w-full bg-lemon/60 border border-yellow-300 rounded-xl px-3 py-2 flex items-start gap-2">
+                            <span class="material-symbols-outlined text-yellow-600 text-base mt-0.5 shrink-0">info</span>
+                            <p class="text-xs font-handwritten text-yellow-800 text-left"><strong>Intermediate level</strong> — completion of Project 1 (Pillowcase) or equivalent basics required.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -458,43 +479,65 @@
 
             <!-- Sign Up Section -->
             <section class="py-24 px-4 md:px-20 lg:px-40 bg-lemon/10" id="signup">
-                <div
-                    class="max-w-4xl mx-auto bg-primary text-white p-12 md:p-16 rounded-bubbly shadow-2xl relative overflow-hidden text-center border-4 border-white/30">
-                    <!-- Background Pattern -->
-                    <div
-                        class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIi8+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')]">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Pricing Cards -->
+                    <div class="text-center mb-10">
+                        <h2 class="text-4xl font-serif italic mb-3">Ready to start your <span class="text-primary underline decoration-wavy decoration-lemon underline-offset-8">sewing adventure?</span></h2>
+                        <p class="font-handwritten text-gray-600 text-lg">Choose how you'd like to join</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6 mb-10">
+                        <!-- Per Session -->
+                        <div class="bg-white rounded-bubbly p-8 shadow-xl border-4 border-mint/30 text-center rotate-1 hover:scale-105 transition-transform">
+                            <div class="inline-block bg-mint/20 text-teal-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 font-handwritten">Individual Session</div>
+                            <p class="text-6xl font-black text-text-main mb-1">$60</p>
+                            <p class="font-handwritten text-gray-500 mb-4">per project session</p>
+                            <ul class="font-handwritten text-sm text-gray-600 space-y-2 text-left mb-2">
+                                <li class="flex items-center gap-2"><span class="size-2 bg-mint rounded-full"></span>Drop in for any single week</li>
+                                <li class="flex items-center gap-2"><span class="size-2 bg-mint rounded-full"></span>Great for trying it out</li>
+                                <li class="flex items-center gap-2"><span class="size-2 bg-mint rounded-full"></span>Bring your own materials</li>
+                            </ul>
+                        </div>
+                        <!-- Full Package -->
+                        <div class="bg-primary rounded-bubbly p-8 shadow-xl border-4 border-white/30 text-center -rotate-1 hover:scale-105 transition-transform relative overflow-hidden">
+                            <div class="absolute top-3 right-4 bg-lemon text-text-main text-xs font-black px-3 py-1 rounded-full font-handwritten">Save $50!</div>
+                            <div class="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 font-handwritten">Full 5-Week Package</div>
+                            <p class="text-6xl font-black text-white mb-1">$250</p>
+                            <p class="font-handwritten text-white/80 mb-4">entire course</p>
+                            <ul class="font-handwritten text-sm text-white/90 space-y-2 text-left mb-2">
+                                <li class="flex items-center gap-2"><span class="size-2 bg-white rounded-full"></span>All 5 project weeks included</li>
+                                <li class="flex items-center gap-2"><span class="size-2 bg-white rounded-full"></span>Best value — $50/session</li>
+                                <li class="flex items-center gap-2"><span class="size-2 bg-white rounded-full"></span>Bring your own materials</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="relative z-10">
-                        <span
-                            class="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-black uppercase mb-6 font-handwritten">Join
-                            the Cohort</span>
-                        <h2 class="text-4xl md:text-6xl font-serif italic mb-8 leading-tight">
-                            Ready to start your <br />
-                            <span class="underline decoration-lemon decoration-wavy underline-offset-8">sewing
-                                adventure?</span>
-                        </h2>
-
-                        <div
-                            class="bg-white/10 backdrop-blur-sm rounded-xl p-8 max-w-xl mx-auto border-2 border-white/20 mb-8 font-handwritten">
-                            <div class="flex flex-col md:flex-row justify-between gap-6 text-left mb-8">
+                    <!-- CTA Card -->
+                    <div class="bg-primary text-white p-10 md:p-14 rounded-bubbly shadow-2xl relative overflow-hidden text-center border-4 border-white/30">
+                        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjZmZmIi8+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')]"></div>
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row justify-center gap-8 mb-8 font-handwritten">
                                 <div>
-                                    <p class="text-white/70 text-sm mb-1 uppercase tracking-wide">Start Date</p>
-                                    <p class="text-white font-black text-2xl">Nov 5th, 2023</p>
+                                    <p class="text-white/70 text-sm mb-1 uppercase tracking-wide">Cohort Starts</p>
+                                    <p class="text-white font-black text-2xl">May 4, 2026</p>
                                 </div>
+                                <div class="hidden md:block w-px bg-white/20"></div>
+                                <div>
+                                    <p class="text-white/70 text-sm mb-1 uppercase tracking-wide">Booking enquiries</p>
+                                    <p class="text-white font-black text-2xl">Mon – Fri · 1:00 – 3:00 pm</p>
+                                </div>
+                                <div class="hidden md:block w-px bg-white/20"></div>
                                 <div>
                                     <p class="text-white/70 text-sm mb-1 uppercase tracking-wide">Registration</p>
                                     <p class="text-lemon font-black text-2xl animate-pulse">Open Now!</p>
                                 </div>
                             </div>
-                            <button
-                                class="w-full bg-white text-primary hover:bg-lemon hover:text-text-main px-8 py-4 rounded-xl font-black text-xl transition-all shadow-lg flex items-center justify-center gap-3">
-                                Sign Up for Workshop
-                                <span class="material-symbols-outlined">auto_fix</span>
-                            </button>
+                            <a href="https://forms.gle/e1X57UDhPdr88hZY7" target="_blank"
+                                class="inline-flex items-center gap-3 bg-white text-primary hover:bg-lemon hover:text-text-main px-10 py-5 rounded-full font-black text-xl transition-all shadow-lg">
+                                Sign Up via Google Form
+                                <span class="material-symbols-outlined">open_in_new</span>
+                            </a>
+                            <p class="text-white/80 text-base italic font-handwritten mt-6">"In our studio, mistakes are just happy accidents!"</p>
                         </div>
-                        <p class="text-white/80 text-lg italic font-handwritten">"In our studio, mistakes are just happy
-                            accidents!"</p>
                     </div>
                 </div>
             </section>
@@ -524,6 +567,8 @@
             classesMenu.classList.toggle("hidden");
             classesArrow.classList.toggle("rotate-180");
         });
+        document.getElementById('mobileBtn').addEventListener('click', function(){ document.getElementById('mobileNav').classList.remove('hidden'); });
+        document.getElementById('mobileClose').addEventListener('click', function(){ document.getElementById('mobileNav').classList.add('hidden'); });
     </script>
 </body>
 
